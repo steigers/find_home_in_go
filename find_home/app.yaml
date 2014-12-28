@@ -1,0 +1,11 @@
+# The application name must coincide with the Google App Engine application id.
+application: find-home-in-go
+version: 1
+runtime: go
+api_version: go1
+
+# _go_app is "a magic string recognized by the development web server; it is 
+# ignored by the production App Engine servers."
+handlers:
+- url: /.*
+  script: _go_app
